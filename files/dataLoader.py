@@ -18,8 +18,9 @@ class train_loader(object):
         for index, line in enumerate(lines):
 
             speaker_label = dictkeys[line.split()[0]]
-            file_name     = os.path.join(train_path, line.split()[1])
-            #file_name = file_name.replace('\\', '"\"') #our code
+            #change here for reading from trainlist of deepmine
+            #file_name     = os.path.join(train_path, line.split()[1])
+            file_name     = os.path.join(train_path, line.split()[2])
             self.data_label.append(speaker_label)
             self.data_list.append(file_name)
 

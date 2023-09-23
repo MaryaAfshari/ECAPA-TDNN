@@ -22,9 +22,11 @@ def main():
     #train_list = "/Volumes/My Passport/Mary/train/train_list_very_small.txt" /Users/maryamafshari/Desktop/Thesis_data
     #train_path = "/Volumes/My Passport/Mary/Voxceleb2_small/Audio/dev/aac" /Users/maryamafshari/Desktop/Thesis_data/Voxceleb2_small/Audio/dev/aac
     #parser.add_argument('--train_list', type=str,   default= "/Volumes/My Passport/Mary/train/train_list_very_small.txt",     help='The path of the training list, https://www.robots.ox.ac.uk/~vgg/data/voxceleb/meta/train_list.txt')
-    parser.add_argument('--train_list', type=str,   default= "train_list_very_small.txt",     help='The path of the training list, https://www.robots.ox.ac.uk/~vgg/data/voxceleb/meta/train_list.txt')
+    #parser.add_argument('--train_list', type=str,   default= "train_list_very_small.txt",     help='The path of the training list, https://www.robots.ox.ac.uk/~vgg/data/voxceleb/meta/train_list.txt')
+    parser.add_argument('--train_list', type=str,   default= "train_list.txt",     help='The path of the training list, https://www.robots.ox.ac.uk/~vgg/data/voxceleb/meta/train_list.txt')
     #parser.add_argument('--train_path', type=str,   default="/Volumes/My Passport/Mary/Voxceleb2_small/Audio/dev/aac",                    help='The path of the training data, eg:"/data08/VoxCeleb2/train/wav" in my case')
-    parser.add_argument('--train_path', type=str,   default="../Voxceleb2_small/Audio/dev/aac",                    help='The path of the training data, eg:"/data08/VoxCeleb2/train/wav" in my case')
+    parser.add_argument('--train_path', type=str,   default="../../../../mnt/disk1/data/DeepMine/wav",                    help='The path of the training data, eg:"/data08/VoxCeleb2/train/wav" in my case')
+    #parser.add_argument('--train_path', type=str,   default="../Voxceleb2_small/Audio/dev/aac",                    help='The path of the training data, eg:"/data08/VoxCeleb2/train/wav" in my case')
     # parser.add_argument('--train_list', type=str,   default="/data08/VoxCeleb2/train_list.txt",     help='The path of the training list, https://www.robots.ox.ac.uk/~vgg/data/voxceleb/meta/train_list.txt')
     # parser.add_argument('--train_path', type=str,   default="/data08/VoxCeleb2/train/wav",                    help='The path of the training data, eg:"/data08/VoxCeleb2/train/wav" in my case')
     
