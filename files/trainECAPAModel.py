@@ -56,7 +56,8 @@ def main():
     ## Define the data loader
     trainloader = train_loader(**vars(args))
     print("get item in main page code =")
-    print(trainloader.__getitem__(2))
+    #print(trainloader.__getitem__(2))
+    print("hello main")
     trainLoader = torch.utils.data.DataLoader(trainloader, batch_size = args.batch_size, shuffle = True, num_workers = 0, drop_last = True)
     print()
     ## Search for the exist models
