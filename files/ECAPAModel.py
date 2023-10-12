@@ -59,7 +59,7 @@ class ECAPAModel(nn.Module):
 		#for x in loader:
 			#print(x)            
 		for num, (data, labels) in enumerate(loader, start = 1):
-			print("num = "+num)
+			#print("num = "+num)
 			self.zero_grad()
 			labels            = torch.LongTensor(labels).cuda()
 			#speaker_embedding = self.speaker_encoder.forward(data.cuda(), aug = True)
@@ -70,6 +70,7 @@ class ECAPAModel(nn.Module):
 			index += len(labels)
 			top1 += prec
 			loss += nloss.detach().cpu().numpy()
+			print("here in train")
 			sys.stderr.write(time.strftime("%m-%d %H:%M:%S") + \
 			" [%2d] Lr: %5f, Training: %.2f%%, "    %(epoch, lr, 100 * (num / loader.__len__())) + \
 			" Loss: %.5f, ACC: %2.2f%% \r"        %(loss/(num), top1/index*len(labels)))
