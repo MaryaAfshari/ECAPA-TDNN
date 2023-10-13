@@ -19,7 +19,7 @@ class train_loader(object):
 
             speaker_label = dictkeys[line.split()[0]]
             #change here for reading from trainlist of deepmine
-            file_name     = os.path.join(train_path, line.split()[1])
+            file_name     = os.path.join(train_path,line.split()[0], line.split()[1])
             #file_name     = os.path.join(train_path, line.split()[2])
             self.data_label.append(speaker_label)
             self.data_list.append(file_name)
