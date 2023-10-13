@@ -41,7 +41,7 @@ class ECAPAModel(nn.Module):
 			index += len(labels)
 			top1 += prec
 			loss += nloss.detach().cpu().numpy()
-			print("here")
+			#print("here")
 			sys.stderr.write(time.strftime("%m-%d %H:%M:%S") + \
 			" [%2d] Lr: %5f, Training: %.2f%%, "    %(epoch, lr, 100 * (num / loader.__len__())) + \
 			" Loss: %.5f, ACC: %2.2f%% \r"        %(loss/(num), top1/index*len(labels)))
