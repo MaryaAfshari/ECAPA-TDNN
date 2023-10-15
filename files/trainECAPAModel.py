@@ -75,6 +75,7 @@ def main():
 
     ## If initial_model is exist, system will train from the initial_model
     if args.initial_model != "":
+        
         print("Model %s loaded from previous state!"%args.initial_model)
         s = ECAPAModel(**vars(args))
         s.load_parameters(args.initial_model)
